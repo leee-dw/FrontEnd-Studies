@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper 연습하기</title>
+  <!-- SWIPER Stylesheets -->
+  <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="resources/CSS/style.css">
+</head>
+
+<body>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./resources/Images/1.jpeg"></div>
+      <div class="swiper-slide"><img src="./resources/Images/2.jpeg"></div>
+      <div class="swiper-slide"><img src="./resources/Images/3.jpeg"></div>
+      <div class="swiper-slide"><img src="./resources/Images/4.jpeg"></div>
+      <div class="swiper-slide"><img src="./resources/Images/5.jpeg"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <!-- SWIPER Scripts -->
+  <script src="./bower_components/swiper/dist/js/swiper.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: '.swiper-pagination',
+
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    // And if we need scrollbar
+    scrollbar: '.swiper-scrollbar',
+  })
+  </script>
+</body>
+
+</html>
