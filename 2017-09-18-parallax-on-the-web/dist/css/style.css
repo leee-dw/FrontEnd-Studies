@@ -8,11 +8,16 @@ h1 {
 figure {
   margin: auto; }
 
-.content article {
-  padding: 100px 0;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center; }
+.content {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  margin-bottom: 400px; }
+  .content article {
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center; }
 
 img {
   max-width: 100%; }
