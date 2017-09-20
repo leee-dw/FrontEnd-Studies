@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Site Bookmarker
+    link(href='./css/bootstrap.min.css', rel='stylesheet')
+    link(href='./css/style.css', rel='stylesheet')
+    link(href='./css/jumbotron.css', rel='stylesheet')
+  body(onload="fetchBookmarks()")
+    .container
+      .header.clearfix
+        nav
+        h3.text-muted Bookmarker
+      .jumbotron
+        h2 Bookmark Your Favorite Sites
+        form#myForm
+          .form-group
+            label Site Name
+            input.form-control#siteName(type="text", placeholder="Website Name")
+          .form-group
+            label Site URL
+            input.form-control#siteUrl(type="text", placeholder="Website URL")
+          button.btn.btn-primary(type="submit") Submit
+      .row.marketing
+        .col-lg-12
+          #bookmarksResults
+      footer.footer
+        p © 2017 Bookmarker, Inc.
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', integrity='sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4', crossorigin='anonymous')
+    script(src='./js/bootstrap.min.js')
+    script(src='./js/main.js')
+
+
