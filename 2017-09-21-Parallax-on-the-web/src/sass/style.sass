@@ -70,8 +70,23 @@ img.showing-item
   max-width: 70%
 
 
+
+.showing-item
+  &:hover
+    filter: brightness(0.5)
+    transition: all 0.2s ease-in-out
+
+
+
 // Directors Grid
 
+img.director-list
+  width: 140px
+  height: 140px
+  object-fit: cover
+  object-position: center
+  border-radius: 50%
+  
 .directors-pics
   figure
     margin-bottom: 20px
@@ -95,7 +110,8 @@ img.showing-item
     &:hover
       img
         filter: brightness(0.4)
-        transition: all 0.3s ease-in-out
+        transition: all 1s ease-in-out
+        object-position: top
 
 
       figcaption
@@ -115,12 +131,6 @@ img.showing-item
       margin-bottom: 1.5rem
 
 
-img.director-list
-  width: 140px
-  height: 140px
-  object-fit: cover
-  object-positon: top
-  border-radius: 50%
 
 
 .video-container
@@ -140,7 +150,7 @@ img.director-list
     border: 3px solid #fff
     padding: 10px 20px
     font-size: 48px
-    border-radius: 12px
+    border-radius: 5px
     // opacity: 0.9
     z-index: 1
     color: #fff

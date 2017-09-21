@@ -15,7 +15,7 @@ $(window).scroll(function() {
 
       setTimeout(function() {
         $('.directors-pics figure').eq(i).addClass('is-showing');
-      }, 130 * (i+1));
+      }, 100 * (i+1));
     });
   }
   
