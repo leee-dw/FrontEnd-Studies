@@ -136,11 +136,12 @@ img.director-list
 .video-container
   position: relative
   width: 100%
-  
+
   video
     position: relative
     z-index: 0
     filter: brightness(.4)
+    display: block
 
 .overlay
   h3.overlay-header
@@ -172,3 +173,16 @@ img.director-list
         style: italic
       color: rgba(255,255,255,0.7)
 
+// Footer
+
+footer
+  background: #ddd
+  padding: 40px
+  position: fixed
+  bottom: 0
+  width: 100%
+  z-index: -100
+
+  .footer-stuff
+    max-width: 1080px
+    margin: 0 auto
