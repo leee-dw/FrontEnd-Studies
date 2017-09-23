@@ -1,18 +1,20 @@
-$color1: #00A6ED
-$color2: #FFD996
-$color3: #F71735
-$color4: #89da59
-$color5: #9881f5
-$color6: #19191A
+$color1: url(../../Images/lalaland1.jpg)
+$color2: url(../../Images/lalaland2.jpg)
+$color3: url(../../Images/lalaland3.jpg)
+$color4: url(../../Images/lalaland4.jpg)
+$color5: url(../../Images/lalaland5.jpg)
+$color6: url(../../Images/lalaland6.jpg)
+$color7: url(../../Images/lalaland7.jpg)
 
 body
   margin: 10%
 
 #slider
   position: relative
-  width: 100%
+  width: 727px
   height: 250px
   overflow: hidden
+  margin: 0 auto
   box-shadow: 0 0 30px rgba(0,0,0,0.3)
 
   ul
@@ -28,20 +30,36 @@ body
     li
       position: relative
       height: 100%
-      width: 80vw
+      width: 727px
       float: left
       &:nth-child(1)
-        background-color: $color1
+        background:
+          image: $color1
+          repeat: no-repeat
       &:nth-child(2)
-        background-color: $color2
+        background:
+          image: $color2
+          repeat: no-repeat
       &:nth-child(3)
-        background-color: $color3
+        background:
+          image: $color3
+          repeat: no-repeat
       &:nth-child(4)
-        background-color: $color4
+        background:
+          image: $color4
+          repeat: no-repeat
       &:nth-child(5)
-        background-color: $color5
+        background:
+          image: $color5
+          repeat: no-repeat
       &:nth-child(6)
-        background-color: $color6
+        background:
+          image: $color6
+          repeat: no-repeat
+      &:nth-child(7)
+        background:
+          image: $color7
+          repeat: no-repeat
 
 
 #prev, #next

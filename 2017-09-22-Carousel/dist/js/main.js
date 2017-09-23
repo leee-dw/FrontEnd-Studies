@@ -1,7 +1,7 @@
 var responsiveSlider = function() {
 
   var slider = document.getElementById('slider');
-  var sliderWidth = slider.offsetWidth;
+  var sliderWidth = slider.clientWidth;
   var slideList = document.getElementById('sliderWrap');
   var count = 1;
   var items = slideList.querySelectorAll('li').length;
@@ -9,7 +9,7 @@ var responsiveSlider = function() {
   var next = document.getElementById('next');
 
   window.addEventListener('resize', function() {
-    sliderWidth = slider.offsetWidth;
+    sliderWidth = slider.clientWidth;
   });
 
   var prevSlide = function() {
@@ -41,9 +41,9 @@ var responsiveSlider = function() {
     prevSlide();
   });
 
-  setInterval(function() {
-    nextSlide();
-  }, 3000);
+  // setInterval(function() {
+  //   nextSlide();
+  // }, 3000);
 
 };
 
