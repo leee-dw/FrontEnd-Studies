@@ -54,7 +54,9 @@ figure {
   top: 350px; }
 
 img.showing-item {
-  max-width: 70%; }
+  max-width: 70%;
+  height: 300px;
+  margin-bottom: 30px; }
 
 .showing-item:hover {
   filter: brightness(0.5);

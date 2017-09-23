@@ -1,7 +1,7 @@
 var responsiveSlider = function() {
 
   var slider = document.getElementById('slider');
-  var sliderWidth = slider.clientWidth;
+  var sliderWidth = slider.offsetWidth;
   var slideList = document.getElementById('sliderWrap');
   var count = 1;
   var items = slideList.querySelectorAll('li').length;
@@ -9,7 +9,7 @@ var responsiveSlider = function() {
   var next = document.getElementById('next');
 
   window.addEventListener('resize', function() {
-    sliderWidth = slider.clientWidth;
+    sliderWidth = slider.offsetWidth;
   });
 
   var prevSlide = function() {
@@ -33,17 +33,18 @@ var responsiveSlider = function() {
     }
   };
 
-  next.addEventListener("click", function() {
-    nextSlide();
-  });
+  // next.addEventListener("click", function() {
+  //   nextSlide();
+  // });
 
-  prev.addEventListener("click", function() {
-    prevSlide();
-  });
+  // prev.addEventListener("click", function() {
+  //   prevSlide();
+  //   console.log('yo')
+  // });
 
   setInterval(function() {
     nextSlide();
-  }, 3500);
+  },2500);
 
 };
 
