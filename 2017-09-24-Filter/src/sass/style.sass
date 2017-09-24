@@ -1,0 +1,44 @@
+$color1: #E73A38
+$color2: #fff
+
+.categories
+  text-align: center
+  padding: 20px 50px
+  
+  button
+    color: $color1
+    background: 0
+    border: 0
+    cursor: pointer
+    &:hover
+      text-decoration: none
+
+
+
+.posts
+  display: flex
+  flex-wrap: wrap
+  .post
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 23%
+    height: 250px
+    margin: 1%
+    text-align: center
+    background: $color1
+    color: $color2
+    opacity: 1
+    visibility: visible
+    transform: scale(1)
+    transition: opacity 350ms ease-in-out, transform 200ms ease-in-out
+    cursor: pointer
+    &:hover
+      transform: scale(1.05)
+    &.hidden
+      opacity: 0.25
+      transform: scale(0.95)
+      &:hover
+        transform: scale(0.95)
+
+
