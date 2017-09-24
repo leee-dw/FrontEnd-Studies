@@ -1,0 +1,67 @@
+// Color
+
+$first-color: #99fab8
+$second-color: #7d97ff
+$third-color: #333
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  min-height: 100vh
+  width: 100vw
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $second-color
+  background: linear-gradient(to bottom, $second-color 0%, $first-color 100%)
+  font-size: 16px
+
+
+.calendar
+  background: $third-color
+  width: 400px
+  color: #fff
+  padding: 20px
+  border-radius: 5px
+  box-shadow: 0 5px 20px rgba(darken($third-color, 100%), 0.8)
+  &__month
+    color: $first-color
+    display: block
+    text-align: center
+    width: 100%
+    font-size: 2rem
+    font-weight: 100
+    margin-bottom: 30px
+  &__days
+    display: flex
+    padding-bottom: 20px
+    .day
+      font-size: 0.7rem
+      color: lighten($third-color, 25%)
+      font-weight: bold
+      width: calc(100%/7)
+      text-align: center
+  &__dates
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    .date
+      width: calc(100%/7)
+      text-align: center
+      padding: 10px 0
+      border: 2px solid transparent
+      border-radius: 5px
+      cursor: pointer
+      transition: all 150ms ease-in-out
+      &:hover
+        border-color: $first-color
+      &--hidden
+        opacity: 0
+        visibility: hidden
+        width: calc(100%/7)
+        text-align: center
+        padding: 5px 0
+
