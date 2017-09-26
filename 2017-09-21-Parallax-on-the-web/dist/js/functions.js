@@ -3,10 +3,10 @@ $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
 
   $('.logo').css({
-    'transform': 'translate(0px, ' + wScroll / 8 + '%)'
+    'transform': 'translate(0px, ' + wScroll / 2 + '%)'
   })
   $('.fore-cine').css({
-    'transform': 'translate(0px, -' + wScroll / 40 + '%)'
+    'transform': 'translate(0px, -' + wScroll / 20 + '%)'
   })
 
   if (wScroll > $('.directors-pics').offset().top / 1.5) {
@@ -20,8 +20,8 @@ $(window).scroll(function() {
   }
   
   if(wScroll > $('.video-container').offset().top/2){
-    $('.overlay-header').css({'opacity': '0.'+ (wScroll * 3.5)})
-    $('.overlay-text').css({'opacity': '0.'+ (wScroll * 3.5)})
+    $('.overlay-header').css({'opacity': '0.'+ (wScroll * 4.5)})
+    $('.overlay-text').css({'opacity': '0.'+ (wScroll * 4.5)})
 
   }
 });

@@ -19,7 +19,7 @@ figure {
   margin-bottom: 400px; }
   .content article {
     padding: 50px 0;
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
     text-align: center; }
 
@@ -56,7 +56,8 @@ figure {
 img.showing-item {
   max-width: 70%;
   height: 300px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-radius: 5px; }
 
 .showing-item:hover {
   filter: brightness(0.5);
@@ -67,7 +68,8 @@ img.director-list {
   height: 140px;
   object-fit: cover;
   object-position: center;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
 
 .directors-pics figure {
   margin-bottom: 20px;
@@ -76,31 +78,50 @@ img.director-list {
   transform: translateX(-20px);
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
+  .directors-pics figure figcaption.director-name {
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    top: 30%;
+    opacity: 0;
+    left: 20%;
+    color: #fff;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out; }
+    .directors-pics figure figcaption.director-name hr.hr-special {
+      margin-top: 1rem;
+      margin-bottom: 1.2rem; }
   .directors-pics figure img {
-    display: block;
     filter: brightness(1);
-    transform: scale(1); }
+    transform: scale(1);
+    position: relative; }
   .directors-pics figure.is-showing {
     opacity: 1;
     transform: translateX(0px); }
   .directors-pics figure:hover img {
     filter: brightness(0.4);
-    transition: all 1s ease-in-out;
-    object-position: top; }
+    transition: all 0.3s ease-in-out; }
   .directors-pics figure:hover figcaption {
     opacity: 1; }
-.directors-pics figcaption {
-  position: absolute;
-  bottom: 35px;
-  opacity: 0;
-  color: #fff;
-  left: 12%;
-  font-size: 12px;
-  transition: all 0.3s ease-in-out; }
-  .directors-pics figcaption hr.hr-special {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem; }
+
+.directors-pics > .img-row:nth-of-type(1) figure:nth-of-type(1) figcaption {
+  left: 3%; }
+.directors-pics > .img-row:nth-of-type(1) figure:nth-of-type(4) figcaption {
+  left: 10%; }
+.directors-pics > .img-row:nth-of-type(1) figure:nth-of-type(6) figcaption {
+  left: 13%; }
+.directors-pics > .img-row:nth-of-type(2) figure:nth-of-type(2) figcaption {
+  left: 13%; }
+.directors-pics > .img-row:nth-of-type(2) figure:nth-of-type(4) figcaption {
+  left: 28%; }
+.directors-pics > .img-row:nth-of-type(3) figure:nth-of-type(2) figcaption {
+  left: 13%; }
+.directors-pics > .img-row:nth-of-type(3) figure:nth-of-type(4) figcaption {
+  left: 8%; }
+.directors-pics > .img-row:nth-of-type(3) figure:nth-of-type(6) figcaption {
+  left: 28%; }
 
 .video-container {
   position: relative;
