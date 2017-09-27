@@ -4,66 +4,14 @@ head
   meta(charset="UTF-8")
   title Attandance Application
   link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css")
+  link(rel="stylesheet", href="./css/style.css")
 body
-  section.header
-    h2.title#title-dw Attandance Management 
-    .columns
-      button#check-dw.column.is-2.is-offset-1.is-primary.button DONGWOO
-      button#check-ja.column.is-2.is-offset-1.is-info.button JINA
-      button#check-uc.column.is-2.is-offset-1.is-danger.button UCHANG
-    div.columns
-      table.column.is-2.is-offset-1.table
-        thead
-          tr
-            th Date
-            th Time
-            th result
-        tfoot
-          tr
-            th 
-            th 
-            th 
-        tbody
-          tr
-            th#date-dw
-            td#time-dw
-            td#late-dw
-          tr
-
-      table.column.is-2.is-offset-1.table
-        thead
-          tr
-            th Date
-            th Time
-            th Result
-        tfoot
-          tr
-            th 
-            th 
-            th 
-        tbody
-          tr
-            th#date-ja
-            td#time-ja
-            td#late-ja
-          tr
-
-      table.column.is-2.is-offset-1.table
-        thead
-          tr
-            th Date
-            th Time
-            th result
-        tfoot
-          tr
-            th 
-            th 
-            th 
-        tbody
-          tr
-            th#date-uc
-            td#time-uc
-            td#late-uc
-          tr
+  header
+    h2.title Attandance Management  
+      button#add.button CHECK
+      
+  main
+    ul
+      li#check
 
   script(src="./js/main.js")
