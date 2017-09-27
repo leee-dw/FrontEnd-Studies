@@ -2,13 +2,14 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8">
-  <title>COLORS — FORMULA X #COLORCURATORS</title>
+  <title>FORMULA X #COLORCURATORS</title>
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,700">
+  <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 <body>
-  <section>
+  <section class="header">
     <div class="header-image">
       <div class="logo"><img src="../FX/logo.gif" alt=""></div>
       <nav class="gnb">
@@ -24,13 +25,64 @@
       </nav>
     </div>
   </section>
+  <nav id="parallax-nav"><a href="">
+      <div class="dot"></div></a><a href="">
+      <div class="dot"></div></a><a href="">
+      <div class="dot"></div></a></nav>
   <section class="content">
-    <div class="cont-block">
-      <h2>INTRODUCING FULL STRENGTH</h2>
-      <h2>FULL COLOR, MEET TOTAL TREATMENT</h2>
-      <p>TOGETHER AT LAST</p>
-      <p>WITH NEW XPERT STROKES™ BRUSH: FASTER, SMOOTHER FINISH</p>
+    <div class="cont-block-1">
+      <div class="cont-detail">
+        <h2>INTRODUCING FULL STRENGTH</h2>
+        <h2>FULL COLOR, MEET TOTAL TREATMENT</h2>
+        <p>TOGETHER AT LAST</p>
+        <p>WITH NEW XPERT STROKES™ BRUSH: FASTER, SMOOTHER FINISH</p>
+      </div>
+      <!-- Swiper-->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../FX/FULL__0001_Layer+Comp10.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../FX/FULL__0004_Layer+Comp+5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../FX/FULL__0006_Layer+Comp+7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../FX/FULL__0005_Layer+Comp+6.jpg" alt=""></div>
+          <div class="swiper-slide"> <img src="../FX/FULL__0007_Layer+Comp+8.jpg" alt=""></div>
+          <div class="swiper-slide"> <img src="../FX/FULL__0000_Layer+Comp+1.jpg" alt=""></div>
+          <div class="swiper-slide"> <img src="../FX/FULL__0002_Layer+Comp+3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../FX/FULL__0001_Layer+Comp+2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../FX/FULL__0003_Layer+Comp+4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../FX/FULL__0000_Layer+Comp9.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+<path d="M0-.25h24v24H0z" fill="none"/>
+</svg>
+        </div>
+        <div class="swiper-button-prev"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
+<path d="M0-.5h24v24H0z" fill="none"/>
+</svg>
+        </div>
+      </div>
+    </div>
+    <button class="shop-link-btn">SHOP AT SEPHORA</button>
+    <div class="cont-block-2">
+      <h2>INSTANTLY STRONGER AND FORTIFY OVER TIME*</h2>
+      <p>*IN AN INDEPENDENT 10-DAY CONSUMER STUDY ON 33 WOMEN, NAILS WERE STRONGER IMMEDIATELY AFTER APPLICATION, WITH LESS BRITTLENESS AFTER SEVEN DAYS OF WEAR. WHEN USED AS DIRECTED.</p>
     </div>
   </section>
+  <div class="second-pics"></div>
+  <section class="content-2">
+    <div class="cont-detail">
+      <h2>#COLORCURATORS</h2>
+      <h2>10 POLISHED POWERHOUSES XPRESS THEIR SIGNATURE STYLE</h2>
+      <h2>THROUGH LIMITED-EDITION COLOR</h2>
+      <p>INTRODUCING HOLIDAY CURATOR,</p>
+      <p>HUDA BEAUTY</p>
+    </div>
+    <div id="player"></div>
+  </section>
   <div style="height: 2000px;"></div>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/parallax.js"></script>
 </body>

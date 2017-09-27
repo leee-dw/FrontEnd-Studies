@@ -2,15 +2,15 @@ doctype
 html(lang="en")
 head
   meta(charset="UTF-8")
-  title COLORS — FORMULA X #COLORCURATORS
+  title FORMULA X #COLORCURATORS
   link(rel="stylesheet", href="./css/main.css")
   //- Fonts
   link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', rel='stylesheet')
   link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Quicksand:400,700")
-
+  link(rel="stylesheet", href="./css/swiper.min.css")
 
 body
-  section
+  section.header
     .header-image
       .logo
         img(src="../FX/logo.gif", alt="")
@@ -27,12 +27,76 @@ body
               a(href="") TREATMENT
             li
               a(href="") THE SETS
+  nav#parallax-nav
+        a(href="")
+          .dot
+        a(href="")
+          .dot
+        a(href="")
+          .dot
   section.content
     
-    div.cont-block
-      h2 INTRODUCING FULL STRENGTH
-      h2 FULL COLOR, MEET TOTAL TREATMENT
-      p TOGETHER AT LAST
-      p WITH NEW XPERT STROKES™ BRUSH: FASTER, SMOOTHER FINISH
-  
+    div.cont-block-1
+      .cont-detail
+        h2 INTRODUCING FULL STRENGTH
+        h2 FULL COLOR, MEET TOTAL TREATMENT
+        p TOGETHER AT LAST
+        p WITH NEW XPERT STROKES™ BRUSH: FASTER, SMOOTHER FINISH
+      // Swiper
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            img(src="../FX/FULL__0001_Layer+Comp10.jpg", alt="")
+          .swiper-slide
+            img(src="../FX/FULL__0004_Layer+Comp+5.jpg", alt="")
+          .swiper-slide
+            img(src="../FX/FULL__0006_Layer+Comp+7.jpg", alt="")
+          .swiper-slide
+            img(src="../FX/FULL__0005_Layer+Comp+6.jpg", alt="")
+          .swiper-slide 
+            img(src="../FX/FULL__0007_Layer+Comp+8.jpg", alt="")
+          .swiper-slide 
+            img(src="../FX/FULL__0000_Layer+Comp+1.jpg", alt="")
+          .swiper-slide 
+            img(src="../FX/FULL__0002_Layer+Comp+3.jpg", alt="")
+          .swiper-slide
+            img(src="../FX/FULL__0001_Layer+Comp+2.jpg", alt="")
+          .swiper-slide
+            img(src="../FX/FULL__0003_Layer+Comp+4.jpg", alt="")
+          .swiper-slide
+            img(src="../FX/FULL__0000_Layer+Comp9.jpg", alt="")
+
+        .swiper-button-next
+          <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+              <path d="M0-.25h24v24H0z" fill="none"/>
+          </svg>
+        .swiper-button-prev
+          <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
+            <path d="M0-.5h24v24H0z" fill="none"/>
+          </svg>
+
+    button.shop-link-btn SHOP AT SEPHORA
+
+    .cont-block-2
+      h2 INSTANTLY STRONGER AND FORTIFY OVER TIME*
+      p *IN AN INDEPENDENT 10-DAY CONSUMER STUDY ON 33 WOMEN, NAILS WERE STRONGER IMMEDIATELY AFTER APPLICATION, WITH LESS BRITTLENESS AFTER SEVEN DAYS OF WEAR. WHEN USED AS DIRECTED.
+
+  .second-pics
+
+  section.content-2
+    .cont-detail
+      h2 #COLORCURATORS
+      h2 10 POLISHED POWERHOUSES XPRESS THEIR SIGNATURE STYLE
+      h2 THROUGH LIMITED-EDITION COLOR
+      p INTRODUCING HOLIDAY CURATOR,
+      p HUDA BEAUTY
+    #player
+
+
   div(style="height: 2000px")
+  script(src="./js/jquery-3.2.1.min.js")
+  script(src="./js/swiper.min.js")
+  script(src="./js/slider.js")
+  script(src="./js/parallax.js")
