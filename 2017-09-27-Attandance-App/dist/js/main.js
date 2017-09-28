@@ -12,7 +12,7 @@ function checkDate() {
   var item = document.createElement('li');
   var parent = check.parentNode
 
-  // 아... 이거냐?
+  // 이.....이거냐?
   item.innerText = localeDate + localeTime
   parent.appendChild(item)
 
