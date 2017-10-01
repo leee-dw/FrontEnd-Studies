@@ -3,35 +3,46 @@ import './App.css';
 import Movie from './Movie'
 // import MoviePoster from './Movie'
 
-const movies = [
-  {
-    title: "Matrix",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,665,1000_AL_.jpg"
-  },
-  {
-    title: "Full Metal Jacket",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BNzc2ZThkOGItZGY5YS00MDYwLTkyOTAtNDRmZWIwMGRhYTc0L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,656,1000_AL_.jpg"
-  },
-  {
-    title: "Oldboy",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@._V1_.jpg"
-  },
-  {
-    title: "Starwars",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BOTE5NzYyNjM0Ml5BMl5BanBnXkFtZTgwNjk4MDIwMjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
-  },
-]
 
 class App extends Component {
+
+state = {}
+
+  componentDidMount(){
+    this._getMovies();
+  }
+
+  _renderMovies = () => {
+    const movies = this.state.movies.map(movie => {
+      console.log(movie);
+      return <Movie title={movie.title} poster={movie.large_cover_image} key={movie.id} />
+    })
+    return movies
+  }
+
+  _getMovies = async () => {
+    const movies = await this._callApi()
+    this.setState({
+      movies
+    })
+  }
+
+  _callApi = () => {
+    return fetch('https://yts.ag/api/v2/list_movies.json?sort_by=rating')
+    .then(potato => potato.json())
+    .then(json => json.data.movies)
+    .catch(err => console.log(err))
+  }
+
   render() {
     return (
       <div className = "App" >
-        {movies.map((movie, index) => {
-          return <Movie title={movie.title} poster={movie.poster} key={index} />
-        })}
+        {this.state.movies ? this._renderMovies () : 'Loading'}
       </div>
     );
   }
 }
+
+
 
 export default App;
