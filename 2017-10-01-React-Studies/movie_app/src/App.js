@@ -4,49 +4,45 @@ import Movie from './Movie';
 
 
 class App extends Component {
-
-  state = {
-    movies: [
-  {
-    title: "Matrix",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
-  },
-  {
-    title: "Full Metal Jacket",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BNzc2ZThkOGItZGY5YS00MDYwLTkyOTAtNDRmZWIwMGRhYTc0L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
-  },
-  {
-    title: "Oldboy",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
-  },
-  {
-    title: "Starwars",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg"
-  }
-]
-  }
+  state = {}
 
   componentDidMount(){
-    setTimeout(() => {
-      this.setState({
-        movies: [
-          {
-            title: "Trainspotting",
-            poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMzA5Zjc3ZTMtMmU5YS00YTMwLWI4MWUtYTU0YTVmNjVmODZhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
-          },
-          ...this.state.movies
-        ]
-      })
-    }, 5000)
+    this._getMovies();
+  }
+
+  _renderMovies = () => {
+    const movies = this.state.movies.map(movie => {
+      console.log(movie);
+      return <Movie 
+        title={movie.title_english}
+        poster={movie.medium_cover_image}
+        genres={movie.genres}
+        synopsis={movie.synopsis}
+        key={movie.id}
+      />
+    })
+    return movies
+  }
+
+  _getMovies = async () => {
+    const movies = await this._callApi()
+    this.setState({
+      movies: movies
+    })
+  }
+
+  _callApi = () => {
+    return fetch('https://yts.ag/api/v2/list_movies.json?sort_by=download_count')
+    .then(potato => potato.json())
+    .then(json => json.data.movies)
+    .catch(err => console.log(err))
   }
 
   render() {
+    const { movies } = this.state;
     return (
-      <div className="App">
-
-        {this.state.movies.map((movie, index) => {
-          return <Movie title={movie.title} poster={movie.poster} key={index} />
-        })}
+      <div className={movies ? "App" : "App--Loading"}>
+        {movies ? this._renderMovies() : 'Loading'}
       </div>
     );
   }
