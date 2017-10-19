@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Google Map</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script type="text/javascript">
+  function initMap() {
+    // Map options
+    var seoul = { lat: 37.532600, lng: 127.024612 };
+    var options = {
+      zoom: 12,
+      center: seoul
+    }
+    // New map
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+
+    // Add Marker
+    var marker = new google.maps.Marker({
+      position: {lat: 35.1794444444, lng: 129.075555556},
+      map: map,
+      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+    });
+
+    var infoWindow = new google.maps.infoWindow({
+      content: '<h1>BUSANNNN</h1>'
+    });
+
+    marker.addListener('click', function () {
+      infoWindow.open(map, marker);
+    });
+  }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUSAZWsYDemPH6wSzVOd-xEOEyGi9-CT4&callback=initMap">
+  </script>
+</body>
+
+</html>
