@@ -1,0 +1,37 @@
+body
+  margin: 0
+  padding: 0
+
+ul
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: flex
+
+ul li
+  list-style: none
+  width: 6px
+  border-radius: 6px
+  height: 15px
+  background: #ff0079
+  margin: 0 2px
+  animation: animate 0.75s infinite alternate
+
+@keyframes animate
+  0%
+    transform: scaleY(1)
+  25%
+    transform: scaleY(1)
+  50%
+    transform: scaleY(1)
+  75%
+    transform: scaleY(1)
+  100%
+    transform: scaleY(2)
+
+
+$elements: 6
+@for $i from 1 to $elements
+  li:nth-child(#{$i})
+    animation-delay: $i/10 + s
