@@ -1,0 +1,31 @@
+body
+  margin: 0
+  padding: 0
+  background-color: #faa
+
+.grid-container
+  width: 1080px
+  margin: 0 auto
+
+ul
+  list-style: none
+
+li.col
+  width: calc((100% - 8rem)/ 4)
+  float: left
+  text-align: center
+  height: 228px
+  line-height: 228px
+  font-size: 2rem
+  margin: 1rem
+  color: #fff
+
+
+$elements: 256
+
+@for $i from 0 to $elements
+  .col:nth-child(#{$i})
+    background-color: rgb($i, $i*1.5,$i*2)
+    border-radius: $i/2 + px
+    &:hover
+      background-color: rgb(100/$i, 10/$i,2/$i)
