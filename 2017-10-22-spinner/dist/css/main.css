@@ -1,22 +1,22 @@
-body {
+.spinner__container {
   margin: 0;
   padding: 0; }
 
-ul {
+.spinner__cont {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex; }
 
-ul li {
+.spinner__module {
   list-style: none;
   width: 6px;
-  border-radius: 6px;
+  border-radius: 30px;
   height: 15px;
   background: #ff0079;
   margin: 0 2px;
-  animation: animate 0.75s infinite alternate; }
+  animation: animate 0.8s infinite alternate; }
 
 @keyframes animate {
   0% {
