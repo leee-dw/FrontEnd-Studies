@@ -1,0 +1,73 @@
+total 254872
+drwxr-xr-x+   72 dongwoolee  staff      2304 12  1 15:22 .
+drwxr-xr-x     6 root        admin       192 11 19 12:14 ..
+-r--------     1 dongwoolee  staff         8  7 22 23:47 .CFUserTextEncoding
+-rw-r--r--@    1 dongwoolee  staff     16388 11 30 23:28 .DS_Store
+drwx------     7 dongwoolee  staff       224 11 30 23:28 .Trash
+drwxr-x---     4 dongwoolee  staff       128 10  3 17:38 .android
+-rw-r--r--     1 dongwoolee  staff   3536407 11  9 13:54 .babel.json
+-rw-r--r--     1 dongwoolee  staff        65 11 11 17:26 .bash_profile
+drwx------     3 dongwoolee  staff        96  7 22 23:56 .bash_sessions
+drwxr-xr-x     4 dongwoolee  staff       128 10 15 17:33 .cache
+drwxr-xr-x     6 dongwoolee  staff       192  7 23 01:57 .codeintel
+drwxr-xr-x     4 dongwoolee  staff       128  9 16 16:41 .config
+drwxr-xr-x     3 dongwoolee  staff        96 11 11 17:51 .cookiecutter_replay
+drwxr-xr-x     3 dongwoolee  staff        96 11 11 17:50 .cookiecutters
+drwx------    13 dongwoolee  staff       416 10 20 11:00 .dropbox
+drwxr-xr-x    12 dongwoolee  staff       384 11  9 11:06 .expo
+drwxr-xr-x     4 dongwoolee  staff       128  8 22 13:04 .gem
+-rw-r--r--     1 dongwoolee  staff       362 12  1 12:06 .gitconfig
+-rw-r--r--@    1 dongwoolee  staff        13  9 11 00:35 .gitignore_global
+-rw-r--r--     1 dongwoolee  staff        33 11 22 16:20 .gvimrc
+-rw-r--r--@    1 dongwoolee  staff        27  9 11 00:35 .hgignore_global
+-rw-r--r--     1 dongwoolee  staff      3939  9 16 17:05 .hyper.js
+drwxr-xr-x     7 dongwoolee  staff       224  9 30 15:48 .hyper_plugins
+drwxr-xr-x     3 dongwoolee  staff        96 11 11 17:09 .idlerc
+drwxr-xr-x     3 dongwoolee  staff        96  9 17 22:57 .local
+drwxr-xr-x     4 dongwoolee  staff       128  9 17 01:16 .node-gyp
+-rw-------     1 dongwoolee  staff       164 12  1 11:52 .node_repl_history
+drwxr-xr-x  1353 dongwoolee  staff     43296  9 12 12:03 .npm
+drwxr-xr-x    21 dongwoolee  staff       672  9 12 11:46 .nvm
+drwxr-xr-x    17 dongwoolee  staff       544  7 23 00:25 .oh-my-zsh
+drwxr-xr-x     2 dongwoolee  staff        64 11  6 23:46 .profile
+drwxr-xr-x     5 dongwoolee  staff       160 11 11 17:37 .pyenv
+-rw-r--r--     1 dongwoolee  staff         6 11 11 17:28 .python-version
+-rw-r--r--     1 dongwoolee  staff         0 11 11 15:42 .python_history
+drwx------     6 dongwoolee  staff       192 12  1 12:04 .ssh
+-rw-r--r--     1 dongwoolee  staff      9468  9 12 17:55 .v8flags.5.1.281.83.0fcb012df4452975a90aba0bcf81460c.json
+drwxr-xr-x    23 dongwoolee  staff       736 11  6 23:44 .vim
+-rw-------     1 dongwoolee  staff     21254 12  1 15:20 .viminfo
+-rw-r--r--     1 dongwoolee  staff      4341 11 22 21:58 .vimrc
+lrwxr-xr-x     1 dongwoolee  staff        42 11 11 16:29 .virtualenvs -> /Users/dongwoolee/.local/share/virtualenvs
+drwxr-xr-x     7 dongwoolee  staff       224  9 29 12:16 .vue-templates
+-rw-r--r--     1 dongwoolee  staff       116 11 11 15:52 .yarnrc
+-rw-r--r--     1 dongwoolee  staff     40566 11 19 12:36 .zcompdump-Dongwoo의 MacBook Pro-5.3
+-rw-r--r--     1 dongwoolee  staff     38581  7 23 00:08 .zcompdump-Dongwoo의 MacBook Pro-5.2
+-rw-r--r--     1 dongwoolee  staff     40585  9 16 21:57 .zcompdump-Dongwoo의 MacBook Pro-5.3.1
+-rw-r--r--     1 dongwoolee  staff       164 11 11 15:13 .zprofile
+-rw-r--r--     1 dongwoolee  staff        17  9 18 14:10 .zsh-update
+-rw-------     1 dongwoolee  staff    243187 12  1 15:22 .zsh_history
+-rw-r--r--     1 dongwoolee  staff       297 11 11 17:30 .zsh_profile
+-rw-r--r--     1 dongwoolee  staff      3317 11 11 17:41 .zshrc
+-rw-r--r--@    1 dongwoolee  staff  34516780 10 15 17:48 636796446.mov
+drwx------@    4 dongwoolee  staff       128  9 30 15:49 Applications
+drwxrwxr-x@    4 dongwoolee  staff       128 11 24 11:41 Creative Cloud Files
+drwx------@    7 dongwoolee  staff       224 11 29 21:20 Desktop
+drwx------@   19 dongwoolee  staff       608 11 29 13:25 Documents
+drwx------+   10 dongwoolee  staff       320 12  1 14:40 Downloads
+drwx------@   20 dongwoolee  staff       640 10 18 17:56 Dropbox
+drwx------@   74 dongwoolee  staff      2368 11 19 17:15 Library
+drwx------+    5 dongwoolee  staff       160  8 17 17:35 Movies
+drwx------+    5 dongwoolee  staff       160  9 12 22:34 Music
+drwx------+    4 dongwoolee  staff       128  7 25 20:52 Pictures
+drwxr-xr-x+    6 dongwoolee  staff       192 10 15 17:37 Public
+-rw-r--r--     1 dongwoolee  staff         6 11 22 16:52 index.html
+drwxr-xr-x     3 dongwoolee  staff        96 11  6 23:53 js
+drwxr-xr-x     2 dongwoolee  staff        64 11 11 15:52 node_modules
+-rw-r--r--     1 dongwoolee  staff    361319 10 25 13:44 package-lock.json
+-rw-r--r--@    1 dongwoolee  staff  83622299 10 19 23:03 popcorn.mov
+-rw-r--r--     1 dongwoolee  staff        48 11  6 23:33 vi
+lrwxr-xr-x     1 dongwoolee  staff        19 11 22 21:53 vim -> /usr/local/bin/mvim
+drwxr-xr-x    18 dongwoolee  staff       576  8 23 10:39 vue-devtools
+drwxr-xr-x     7 dongwoolee  staff       224  7 23 03:15 zsh
+-rw-r--r--@    1 dongwoolee  staff   7948461 10 18 13:06 스르륵.mov
