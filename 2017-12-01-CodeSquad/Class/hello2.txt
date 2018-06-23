@@ -1,8 +1,0 @@
-total 16
-drwxr-xr-x   7 dongwoolee  staff   224 12  1 15:15 .
-drwxr-xr-x@ 52 dongwoolee  staff  1664 12  1 10:26 ..
-drwxr-xr-x   4 dongwoolee  staff   128 12  1 11:47 dist
--rw-r--r--@  1 dongwoolee  staff   282 12  1 13:46 hello.html
--rw-r--r--   1 dongwoolee  staff     0 12  1 15:18 hello.txt
-drwxr-xr-x   3 dongwoolee  staff    96 12  1 10:28 src
--rw-r--r--@  1 dongwoolee  staff   684 12  1 14:32 unix.md
